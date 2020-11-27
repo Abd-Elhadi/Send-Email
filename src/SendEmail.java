@@ -11,8 +11,8 @@ public class SendEmail {
 		properties.put("mail.smtp.hots", "smtp.gmail.com");
 		properties.put("mail.smtp.port", "587");
 
-		String email = "example@gmail.com";
-		String pass = "example";
+		String email = "notifications.system.module@gmail.com";
+		String pass = "notsys2020";
 
 		Session session = Session.getInstance(properties, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -44,7 +44,6 @@ public class SendEmail {
 		try {
 			SendEmail.sender("abdelhadioumar@gmail.com");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
